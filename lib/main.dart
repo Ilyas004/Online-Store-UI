@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_store/feach/screen_size_singleton.dart';
+import 'package:online_store/theme/colors.dart';
 import 'package:online_store/ui/bottom_main_menu/bottom_main_menu.dart';
 import 'package:online_store/ui/catalog/catalog_clothing_type_list_page.dart';
 import 'package:online_store/ui/catalog/catalog_list_page.dart';
@@ -15,6 +16,7 @@ import 'package:online_store/ui/profile/main/profile_page.dart';
 import 'package:online_store/ui/registration/registration_page.dart';
 import 'package:online_store/ui/shopping_cart/shopping_cart_page.dart';
 import 'package:online_store/ui/sign_up/sign_up_page.dart';
+import 'package:online_store/ui/size_list/size_list_page.dart';
 import 'package:online_store/ui/success_registration/success_registration_page.dart';
 
 void main() {
@@ -47,7 +49,8 @@ class MyApp extends StatelessWidget {
         '/payment_successful': (context) => const PaymentSuccessfulPage(),
         '/profile/details': (context) => const DetailsProfilePage(),
         '/profile/edit_info': (context) => const EditInfoProfilePage(),
-        '/catalog/filters': (context) => const FiltersPage()
+        '/catalog/filters': (context) => const FiltersPage(),
+        '/size_list': (context) => const SizeListPage()
       },
 
       initialRoute: '/auth/registration',
